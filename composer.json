@@ -1,0 +1,22 @@
+{
+    "require": {
+        "guzzlehttp/guzzle": "^7.7",
+        "symfony/http-client": "^6.3",
+        "nyholm/psr7": "^1.8",
+        "jolicode/slack-php-api": "4.5",
+        "google/apiclient": "^2.15.0",
+        "symfony/serializer": "^6.3",
+        "cron/cron": "^1.8",
+        "dragonmantank/cron-expression": "^3.3"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Barta\\": "src/"
+        }
+    }
+}
