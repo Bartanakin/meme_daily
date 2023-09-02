@@ -10,7 +10,7 @@ class MemeSenderApp
 {
     private const SHOWN_PREFIX = 'shown_';
     private const MEME_FOR_TODAY = 'Mem na dziś';
-    private const NO_MEMES_MESSAGE = 'Nie znalazłem żadnych memów :cry: Proszę podeślij mi jakieś, żebym świat stał się piękniejszy :face_holding_back_tears:';
+    private const NO_MEMES_MESSAGE = 'Nie znalazłem żadnych memów :cry: Proszę podeślij mi jakieś, żeby świat stał się piękniejszy :face_holding_back_tears:';
 
     public function __construct(
         protected MemeRetrieverInterface $memeRetriever,

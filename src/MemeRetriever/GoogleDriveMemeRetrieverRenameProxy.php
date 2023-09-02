@@ -18,7 +18,7 @@ class GoogleDriveMemeRetrieverRenameProxy implements MemeRetrieverInterface
         $meme = $this->googleDriveMemeRetriever->getRandomMeme($excludePrefixed);
 
         $newFile = new DriveFile();
-        $newFile->name = $excludePrefixed . '_' . (new DateTime())->getTimestamp() . $meme->getFile()->getName();
+        $newFile->name = $excludePrefixed . (new DateTime())->getTimestamp() . '_' . $meme->getFile()->getName();
         $this->googleDriveMemeRetriever->getDrive()->files->update($meme->getFile()->getId(), $newFile);
 
         return $meme;
