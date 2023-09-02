@@ -3,3 +3,4 @@ env.php
 credentials.json
 tmp/*
 .DS_Store
+.idea
